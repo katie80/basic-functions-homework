@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions! (Two)</title>
+</head>
+<body>
+	<script>
+
+		// Given the two perpedicular sides of a right triangle (t1_a, t1_b) we compute the third (t1_c).
+		// The code below is repetitive. Write a function, "triangle", which takes in two sides of
+		// a triangle and returns the third using the equation repeated below.
+
+		// Then, convert the code below to use the new "triangle" function instead of repeating the
+		// equation three times.
+
+		function triangle (x, y) {
+			var z = Math.sqrt((x * x) + (y * y));
+			return z;
+		}
+
+		var t1_a = 3;
+		var t1_b = 4;
+		var t1_c = triangle(t1_a, t1_b);
+
+
+		var t2_a = 5;
+		var t2_b = 18;
+		var t2_c = triangle(t2_a, t2_b);
+
+
+		var t3_a = 9;
+		var t3_b = 12;
+		var t3_c = triangle(t3_a, t3_b);
+
+
+
+		console.log(triangle(3, 4));
+
+		console.log(triangle(5, 18));
+		
+		console.log(triangle(9, 12));
+
+	</script>
+</body>
+</html>
